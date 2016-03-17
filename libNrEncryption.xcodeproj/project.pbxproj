@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97B466B91C9AE85900DD2C30 /* Aes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466AD1C9AE85900DD2C30 /* Aes.cpp */; };
+		97B466BA1C9AE85900DD2C30 /* Aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466AE1C9AE85900DD2C30 /* Aes.h */; };
+		97B466BB1C9AE85900DD2C30 /* Cipher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466AF1C9AE85900DD2C30 /* Cipher.cpp */; };
+		97B466BC1C9AE85900DD2C30 /* Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B01C9AE85900DD2C30 /* Cipher.h */; };
+		97B466BD1C9AE85900DD2C30 /* Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B11C9AE85900DD2C30 /* Hash.h */; };
+		97B466BE1C9AE85900DD2C30 /* Rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466B21C9AE85900DD2C30 /* Rsa.cpp */; };
+		97B466BF1C9AE85900DD2C30 /* Rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B31C9AE85900DD2C30 /* Rsa.h */; };
+		97B466C01C9AE85900DD2C30 /* Serpent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466B41C9AE85900DD2C30 /* Serpent.cpp */; };
+		97B466C11C9AE85900DD2C30 /* serpent.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B51C9AE85900DD2C30 /* serpent.h */; };
+		97B466C21C9AE85900DD2C30 /* Sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B61C9AE85900DD2C30 /* Sha256.h */; };
+		97B466C31C9AE85900DD2C30 /* twofish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466B71C9AE85900DD2C30 /* twofish.cpp */; };
+		97B466C41C9AE85900DD2C30 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B81C9AE85900DD2C30 /* twofish.h */; };
+		97B466CA1C9AE86B00DD2C30 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466C61C9AE86B00DD2C30 /* platform.h */; };
+		97B466CB1C9AE86B00DD2C30 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466C71C9AE86B00DD2C30 /* table.h */; };
+		97B466CC1C9AE86B00DD2C30 /* twofish2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466C81C9AE86B00DD2C30 /* twofish2.cpp */; };
+		97B466CD1C9AE86B00DD2C30 /* twofish2.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466C91C9AE86B00DD2C30 /* twofish2.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		97B466A51C9AE7D900DD2C30 /* libNrEncryption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNrEncryption.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B466AD1C9AE85900DD2C30 /* Aes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Aes.cpp; path = nrencryption/Aes.cpp; sourceTree = "<group>"; };
+		97B466AE1C9AE85900DD2C30 /* Aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aes.h; path = nrencryption/Aes.h; sourceTree = "<group>"; };
+		97B466AF1C9AE85900DD2C30 /* Cipher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cipher.cpp; path = nrencryption/Cipher.cpp; sourceTree = "<group>"; };
+		97B466B01C9AE85900DD2C30 /* Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cipher.h; path = nrencryption/Cipher.h; sourceTree = "<group>"; };
+		97B466B11C9AE85900DD2C30 /* Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hash.h; path = nrencryption/Hash.h; sourceTree = "<group>"; };
+		97B466B21C9AE85900DD2C30 /* Rsa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rsa.cpp; path = nrencryption/Rsa.cpp; sourceTree = "<group>"; };
+		97B466B31C9AE85900DD2C30 /* Rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rsa.h; path = nrencryption/Rsa.h; sourceTree = "<group>"; };
+		97B466B41C9AE85900DD2C30 /* Serpent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Serpent.cpp; path = nrencryption/Serpent.cpp; sourceTree = "<group>"; };
+		97B466B51C9AE85900DD2C30 /* serpent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = serpent.h; path = nrencryption/serpent.h; sourceTree = "<group>"; };
+		97B466B61C9AE85900DD2C30 /* Sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sha256.h; path = nrencryption/Sha256.h; sourceTree = "<group>"; };
+		97B466B71C9AE85900DD2C30 /* twofish.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twofish.cpp; path = nrencryption/twofish.cpp; sourceTree = "<group>"; };
+		97B466B81C9AE85900DD2C30 /* twofish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twofish.h; path = nrencryption/twofish.h; sourceTree = "<group>"; };
+		97B466C61C9AE86B00DD2C30 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = nrencryption/twofish/platform.h; sourceTree = "<group>"; };
+		97B466C71C9AE86B00DD2C30 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = table.h; path = nrencryption/twofish/table.h; sourceTree = "<group>"; };
+		97B466C81C9AE86B00DD2C30 /* twofish2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twofish2.cpp; path = nrencryption/twofish/twofish2.cpp; sourceTree = "<group>"; };
+		97B466C91C9AE86B00DD2C30 /* twofish2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twofish2.h; path = nrencryption/twofish/twofish2.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97B466A21C9AE7D900DD2C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97B4669C1C9AE7D900DD2C30 = {
+			isa = PBXGroup;
+			children = (
+				97B466AC1C9AE84A00DD2C30 /* nrencryption */,
+				97B466A61C9AE7D900DD2C30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97B466A61C9AE7D900DD2C30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97B466A51C9AE7D900DD2C30 /* libNrEncryption.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97B466AC1C9AE84A00DD2C30 /* nrencryption */ = {
+			isa = PBXGroup;
+			children = (
+				97B466C51C9AE85C00DD2C30 /* twofish */,
+				97B466AD1C9AE85900DD2C30 /* Aes.cpp */,
+				97B466AE1C9AE85900DD2C30 /* Aes.h */,
+				97B466AF1C9AE85900DD2C30 /* Cipher.cpp */,
+				97B466B01C9AE85900DD2C30 /* Cipher.h */,
+				97B466B11C9AE85900DD2C30 /* Hash.h */,
+				97B466B21C9AE85900DD2C30 /* Rsa.cpp */,
+				97B466B31C9AE85900DD2C30 /* Rsa.h */,
+				97B466B41C9AE85900DD2C30 /* Serpent.cpp */,
+				97B466B51C9AE85900DD2C30 /* serpent.h */,
+				97B466B61C9AE85900DD2C30 /* Sha256.h */,
+				97B466B71C9AE85900DD2C30 /* twofish.cpp */,
+				97B466B81C9AE85900DD2C30 /* twofish.h */,
+			);
+			name = nrencryption;
+			sourceTree = "<group>";
+		};
+		97B466C51C9AE85C00DD2C30 /* twofish */ = {
+			isa = PBXGroup;
+			children = (
+				97B466C61C9AE86B00DD2C30 /* platform.h */,
+				97B466C71C9AE86B00DD2C30 /* table.h */,
+				97B466C81C9AE86B00DD2C30 /* twofish2.cpp */,
+				97B466C91C9AE86B00DD2C30 /* twofish2.h */,
+			);
+			name = twofish;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		97B466A31C9AE7D900DD2C30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B466CB1C9AE86B00DD2C30 /* table.h in Headers */,
+				97B466C11C9AE85900DD2C30 /* serpent.h in Headers */,
+				97B466C41C9AE85900DD2C30 /* twofish.h in Headers */,
+				97B466BD1C9AE85900DD2C30 /* Hash.h in Headers */,
+				97B466CD1C9AE86B00DD2C30 /* twofish2.h in Headers */,
+				97B466BF1C9AE85900DD2C30 /* Rsa.h in Headers */,
+				97B466C21C9AE85900DD2C30 /* Sha256.h in Headers */,
+				97B466CA1C9AE86B00DD2C30 /* platform.h in Headers */,
+				97B466BA1C9AE85900DD2C30 /* Aes.h in Headers */,
+				97B466BC1C9AE85900DD2C30 /* Cipher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		97B466A41C9AE7D900DD2C30 /* NrEncryption */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B466A91C9AE7D900DD2C30 /* Build configuration list for PBXNativeTarget "NrEncryption" */;
+			buildPhases = (
+				97B466A11C9AE7D900DD2C30 /* Sources */,
+				97B466A21C9AE7D900DD2C30 /* Frameworks */,
+				97B466A31C9AE7D900DD2C30 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NrEncryption;
+			productName = NrEncryption;
+			productReference = 97B466A51C9AE7D900DD2C30 /* libNrEncryption.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97B4669D1C9AE7D900DD2C30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Liquidsoft Studio";
+				TargetAttributes = {
+					97B466A41C9AE7D900DD2C30 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 97B466A01C9AE7D900DD2C30 /* Build configuration list for PBXProject "libNrEncryption" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 97B4669C1C9AE7D900DD2C30;
+			productRefGroup = 97B466A61C9AE7D900DD2C30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97B466A41C9AE7D900DD2C30 /* NrEncryption */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97B466A11C9AE7D900DD2C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B466BE1C9AE85900DD2C30 /* Rsa.cpp in Sources */,
+				97B466C01C9AE85900DD2C30 /* Serpent.cpp in Sources */,
+				97B466BB1C9AE85900DD2C30 /* Cipher.cpp in Sources */,
+				97B466CC1C9AE86B00DD2C30 /* twofish2.cpp in Sources */,
+				97B466C31C9AE85900DD2C30 /* twofish.cpp in Sources */,
+				97B466B91C9AE85900DD2C30 /* Aes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		97B466A71C9AE7D900DD2C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		97B466A81C9AE7D900DD2C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		97B466AA1C9AE7D900DD2C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97B466AB1C9AE7D900DD2C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97B466A01C9AE7D900DD2C30 /* Build configuration list for PBXProject "libNrEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B466A71C9AE7D900DD2C30 /* Debug */,
+				97B466A81C9AE7D900DD2C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B466A91C9AE7D900DD2C30 /* Build configuration list for PBXNativeTarget "NrEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B466AA1C9AE7D900DD2C30 /* Debug */,
+				97B466AB1C9AE7D900DD2C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97B4669D1C9AE7D900DD2C30 /* Project object */;
+}
