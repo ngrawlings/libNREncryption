@@ -26,7 +26,7 @@
 #include <stdint.h>
 #include <string.h> /* memset() */
 //#include <avr/pgmspace.h>
-#include "serpent.h"
+#include "Serpent.h"
 
 namespace nrcore {
 

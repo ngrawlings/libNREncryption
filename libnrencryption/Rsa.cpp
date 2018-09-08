@@ -30,7 +30,7 @@ namespace nrcore {
 
     Rsa::Rsa(const Memory& _cert, const FORMAT cert_format, const Memory& _key, const FORMAT key_format) : privkey(0), pubkey(0), cert(0) {
 
-        BIO *bio_key;
+        BIO *bio_key = 0;
         Memory pkey;
 
         initPublicCertificate(_cert, cert_format);
@@ -38,7 +38,7 @@ namespace nrcore {
         if (_key.length()) {
             pkey = _key.getMemory();
             if (key_format == PEM) {
-                bio_key = BIO_new_mem_buf(pkey.getPtr(), _key.length());
+                bio_key = BIO_new_mem_buf(pkey.getPtr(), (int)_key.length());
                 privkey = PEM_read_bio_PrivateKey(bio_key, NULL, 0, NULL);
             } else {
                 const unsigned char *tmp = (unsigned char*)((char*)pkey.getPtr());
@@ -54,13 +54,13 @@ namespace nrcore {
     }
 
     void Rsa::initPublicCertificate(const Memory& _cert, const FORMAT cert_format) {
-        BIO *bio_cert;
+        BIO *bio_cert = 0;
         Memory pcert;
 
         if (_cert.length()) {
             pcert = _cert.getMemory();
             if (cert_format == PEM) {
-                bio_cert = BIO_new_mem_buf(pcert.getPtr(), _cert.length());
+                bio_cert = BIO_new_mem_buf(pcert.getPtr(), (int)_cert.length());
                 cert = PEM_read_bio_X509(bio_cert, NULL, 0, NULL);
                 BIO_free(bio_cert);
             } else {

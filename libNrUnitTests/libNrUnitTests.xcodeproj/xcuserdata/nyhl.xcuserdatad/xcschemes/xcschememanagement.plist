@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UnitTests.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>libNrEncryption.xcscheme</key>
+		<key>libNrUnitTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>

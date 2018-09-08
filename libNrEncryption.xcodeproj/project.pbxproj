@@ -3,218 +3,339 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97B466B91C9AE85900DD2C30 /* Aes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466AD1C9AE85900DD2C30 /* Aes.cpp */; };
-		97B466BA1C9AE85900DD2C30 /* Aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466AE1C9AE85900DD2C30 /* Aes.h */; };
-		97B466BB1C9AE85900DD2C30 /* Cipher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466AF1C9AE85900DD2C30 /* Cipher.cpp */; };
-		97B466BC1C9AE85900DD2C30 /* Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B01C9AE85900DD2C30 /* Cipher.h */; };
-		97B466BD1C9AE85900DD2C30 /* Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B11C9AE85900DD2C30 /* Hash.h */; };
-		97B466BE1C9AE85900DD2C30 /* Rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466B21C9AE85900DD2C30 /* Rsa.cpp */; };
-		97B466BF1C9AE85900DD2C30 /* Rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B31C9AE85900DD2C30 /* Rsa.h */; };
-		97B466C01C9AE85900DD2C30 /* Serpent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466B41C9AE85900DD2C30 /* Serpent.cpp */; };
-		97B466C11C9AE85900DD2C30 /* serpent.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B51C9AE85900DD2C30 /* serpent.h */; };
-		97B466C21C9AE85900DD2C30 /* Sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B61C9AE85900DD2C30 /* Sha256.h */; };
-		97B466C31C9AE85900DD2C30 /* twofish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466B71C9AE85900DD2C30 /* twofish.cpp */; };
-		97B466C41C9AE85900DD2C30 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466B81C9AE85900DD2C30 /* twofish.h */; };
-		97B466CA1C9AE86B00DD2C30 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466C61C9AE86B00DD2C30 /* platform.h */; };
-		97B466CB1C9AE86B00DD2C30 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466C71C9AE86B00DD2C30 /* table.h */; };
-		97B466CC1C9AE86B00DD2C30 /* twofish2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466C81C9AE86B00DD2C30 /* twofish2.cpp */; };
-		97B466CD1C9AE86B00DD2C30 /* twofish2.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466C91C9AE86B00DD2C30 /* twofish2.h */; };
+		972023122144035700CB6307 /* Signer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972023102144035700CB6307 /* Signer.cpp */; };
+		972023132144035700CB6307 /* Signer.h in Headers */ = {isa = PBXBuildFile; fileRef = 972023112144035700CB6307 /* Signer.h */; };
+		972139CD214192260010C00D /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C0214192260010C00D /* config.h */; };
+		972139CE214192260010C00D /* Secp256k1w.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C1214192260010C00D /* Secp256k1w.h */; };
+		972139CF214192260010C00D /* Serpent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C2214192260010C00D /* Serpent.cpp */; };
+		972139D0214192260010C00D /* Rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C3214192260010C00D /* Rsa.cpp */; };
+		972139D1214192260010C00D /* Aes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C4214192260010C00D /* Aes.cpp */; };
+		972139D2214192260010C00D /* Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C5214192260010C00D /* Hash.h */; };
+		972139D3214192260010C00D /* Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C6214192260010C00D /* Cipher.h */; };
+		972139D4214192260010C00D /* Serpent.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C7214192260010C00D /* Serpent.h */; };
+		972139D5214192260010C00D /* Rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C8214192260010C00D /* Rsa.h */; };
+		972139D6214192260010C00D /* Secp256k1w.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C9214192260010C00D /* Secp256k1w.cpp */; };
+		972139D7214192260010C00D /* Aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139CA214192260010C00D /* Aes.h */; };
+		972139D8214192260010C00D /* Sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139CB214192260010C00D /* Sha256.h */; };
+		972139D9214192260010C00D /* Cipher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139CC214192260010C00D /* Cipher.cpp */; };
+		972139DC214192310010C00D /* twofish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139DA214192310010C00D /* twofish.cpp */; };
+		972139DD214192310010C00D /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139DB214192310010C00D /* twofish.h */; };
+		972139E22141923E0010C00D /* twofish2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139DE2141923E0010C00D /* twofish2.cpp */; };
+		972139E32141923E0010C00D /* twofish2.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139DF2141923E0010C00D /* twofish2.h */; };
+		972139E42141923E0010C00D /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139E02141923E0010C00D /* table.h */; };
+		972139E52141923E0010C00D /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139E12141923E0010C00D /* platform.h */; };
+		972139F221419B0D0010C00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139F121419B0D0010C00D /* main.cpp */; };
+		97DA12552143FC5500296BEB /* libNrEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9721398E21417AF80010C00D /* libNrEncryption.a */; };
+		97DA12592143FCB500296BEB /* libnrcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12572143FCB500296BEB /* libnrcore.a */; };
+		97DA125A2143FCB500296BEB /* libnrdebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12582143FCB500296BEB /* libnrdebug.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		972139ED21419B0D0010C00D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		97B466A51C9AE7D900DD2C30 /* libNrEncryption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNrEncryption.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		97B466AD1C9AE85900DD2C30 /* Aes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Aes.cpp; path = nrencryption/Aes.cpp; sourceTree = "<group>"; };
-		97B466AE1C9AE85900DD2C30 /* Aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aes.h; path = nrencryption/Aes.h; sourceTree = "<group>"; };
-		97B466AF1C9AE85900DD2C30 /* Cipher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cipher.cpp; path = nrencryption/Cipher.cpp; sourceTree = "<group>"; };
-		97B466B01C9AE85900DD2C30 /* Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cipher.h; path = nrencryption/Cipher.h; sourceTree = "<group>"; };
-		97B466B11C9AE85900DD2C30 /* Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hash.h; path = nrencryption/Hash.h; sourceTree = "<group>"; };
-		97B466B21C9AE85900DD2C30 /* Rsa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rsa.cpp; path = nrencryption/Rsa.cpp; sourceTree = "<group>"; };
-		97B466B31C9AE85900DD2C30 /* Rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rsa.h; path = nrencryption/Rsa.h; sourceTree = "<group>"; };
-		97B466B41C9AE85900DD2C30 /* Serpent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Serpent.cpp; path = nrencryption/Serpent.cpp; sourceTree = "<group>"; };
-		97B466B51C9AE85900DD2C30 /* serpent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = serpent.h; path = nrencryption/serpent.h; sourceTree = "<group>"; };
-		97B466B61C9AE85900DD2C30 /* Sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sha256.h; path = nrencryption/Sha256.h; sourceTree = "<group>"; };
-		97B466B71C9AE85900DD2C30 /* twofish.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twofish.cpp; path = nrencryption/twofish.cpp; sourceTree = "<group>"; };
-		97B466B81C9AE85900DD2C30 /* twofish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twofish.h; path = nrencryption/twofish.h; sourceTree = "<group>"; };
-		97B466C61C9AE86B00DD2C30 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = nrencryption/twofish/platform.h; sourceTree = "<group>"; };
-		97B466C71C9AE86B00DD2C30 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = table.h; path = nrencryption/twofish/table.h; sourceTree = "<group>"; };
-		97B466C81C9AE86B00DD2C30 /* twofish2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twofish2.cpp; path = nrencryption/twofish/twofish2.cpp; sourceTree = "<group>"; };
-		97B466C91C9AE86B00DD2C30 /* twofish2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twofish2.h; path = nrencryption/twofish/twofish2.h; sourceTree = "<group>"; };
+		972023102144035700CB6307 /* Signer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Signer.cpp; sourceTree = "<group>"; };
+		972023112144035700CB6307 /* Signer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Signer.h; sourceTree = "<group>"; };
+		9721398E21417AF80010C00D /* libNrEncryption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNrEncryption.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		972139C0214192260010C00D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libnrencryption/config.h; sourceTree = SOURCE_ROOT; };
+		972139C1214192260010C00D /* Secp256k1w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Secp256k1w.h; path = libnrencryption/Secp256k1w.h; sourceTree = SOURCE_ROOT; };
+		972139C2214192260010C00D /* Serpent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Serpent.cpp; path = libnrencryption/Serpent.cpp; sourceTree = SOURCE_ROOT; };
+		972139C3214192260010C00D /* Rsa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rsa.cpp; path = libnrencryption/Rsa.cpp; sourceTree = SOURCE_ROOT; };
+		972139C4214192260010C00D /* Aes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Aes.cpp; path = libnrencryption/Aes.cpp; sourceTree = SOURCE_ROOT; };
+		972139C5214192260010C00D /* Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hash.h; path = libnrencryption/Hash.h; sourceTree = SOURCE_ROOT; };
+		972139C6214192260010C00D /* Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cipher.h; path = libnrencryption/base/Cipher.h; sourceTree = SOURCE_ROOT; };
+		972139C7214192260010C00D /* Serpent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serpent.h; path = libnrencryption/Serpent.h; sourceTree = SOURCE_ROOT; };
+		972139C8214192260010C00D /* Rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rsa.h; path = libnrencryption/Rsa.h; sourceTree = SOURCE_ROOT; };
+		972139C9214192260010C00D /* Secp256k1w.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Secp256k1w.cpp; path = libnrencryption/Secp256k1w.cpp; sourceTree = SOURCE_ROOT; };
+		972139CA214192260010C00D /* Aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aes.h; path = libnrencryption/Aes.h; sourceTree = SOURCE_ROOT; };
+		972139CB214192260010C00D /* Sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sha256.h; path = libnrencryption/Sha256.h; sourceTree = SOURCE_ROOT; };
+		972139CC214192260010C00D /* Cipher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cipher.cpp; path = libnrencryption/base/Cipher.cpp; sourceTree = SOURCE_ROOT; };
+		972139DA214192310010C00D /* twofish.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twofish.cpp; path = libnrencryption/twofish.cpp; sourceTree = SOURCE_ROOT; };
+		972139DB214192310010C00D /* twofish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twofish.h; path = libnrencryption/twofish.h; sourceTree = SOURCE_ROOT; };
+		972139DE2141923E0010C00D /* twofish2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twofish2.cpp; path = libnrencryption/twofish/twofish2.cpp; sourceTree = SOURCE_ROOT; };
+		972139DF2141923E0010C00D /* twofish2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twofish2.h; path = libnrencryption/twofish/twofish2.h; sourceTree = SOURCE_ROOT; };
+		972139E02141923E0010C00D /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = table.h; path = libnrencryption/twofish/table.h; sourceTree = SOURCE_ROOT; };
+		972139E12141923E0010C00D /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = libnrencryption/twofish/platform.h; sourceTree = SOURCE_ROOT; };
+		972139EF21419B0D0010C00D /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		972139F121419B0D0010C00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		97DA12572143FCB500296BEB /* libnrcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnrcore.a; path = ../../../../../usr/local/lib/libnrcore.a; sourceTree = "<group>"; };
+		97DA12582143FCB500296BEB /* libnrdebug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnrdebug.a; path = ../../../../../usr/local/lib/libnrdebug.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		97B466A21C9AE7D900DD2C30 /* Frameworks */ = {
+		9721398C21417AF80010C00D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		972139EC21419B0D0010C00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97DA12592143FCB500296BEB /* libnrcore.a in Frameworks */,
+				97DA125A2143FCB500296BEB /* libnrdebug.a in Frameworks */,
+				97DA12552143FC5500296BEB /* libNrEncryption.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		97B4669C1C9AE7D900DD2C30 = {
+		972023142144038900CB6307 /* base */ = {
 			isa = PBXGroup;
 			children = (
-				97B466AC1C9AE84A00DD2C30 /* nrencryption */,
-				97B466A61C9AE7D900DD2C30 /* Products */,
+				972139C6214192260010C00D /* Cipher.h */,
+				972139CC214192260010C00D /* Cipher.cpp */,
+				972023112144035700CB6307 /* Signer.h */,
+				972023102144035700CB6307 /* Signer.cpp */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		9721398521417AF80010C00D = {
+			isa = PBXGroup;
+			children = (
+				9721399521417B780010C00D /* libnrencryption */,
+				972139F021419B0D0010C00D /* UnitTests */,
+				9721398F21417AF80010C00D /* Products */,
+				97DA12562143FCB500296BEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		97B466A61C9AE7D900DD2C30 /* Products */ = {
+		9721398F21417AF80010C00D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97B466A51C9AE7D900DD2C30 /* libNrEncryption.a */,
+				9721398E21417AF80010C00D /* libNrEncryption.a */,
+				972139EF21419B0D0010C00D /* UnitTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97B466AC1C9AE84A00DD2C30 /* nrencryption */ = {
+		9721399521417B780010C00D /* libnrencryption */ = {
 			isa = PBXGroup;
 			children = (
-				97B466C51C9AE85C00DD2C30 /* twofish */,
-				97B466AD1C9AE85900DD2C30 /* Aes.cpp */,
-				97B466AE1C9AE85900DD2C30 /* Aes.h */,
-				97B466AF1C9AE85900DD2C30 /* Cipher.cpp */,
-				97B466B01C9AE85900DD2C30 /* Cipher.h */,
-				97B466B11C9AE85900DD2C30 /* Hash.h */,
-				97B466B21C9AE85900DD2C30 /* Rsa.cpp */,
-				97B466B31C9AE85900DD2C30 /* Rsa.h */,
-				97B466B41C9AE85900DD2C30 /* Serpent.cpp */,
-				97B466B51C9AE85900DD2C30 /* serpent.h */,
-				97B466B61C9AE85900DD2C30 /* Sha256.h */,
-				97B466B71C9AE85900DD2C30 /* twofish.cpp */,
-				97B466B81C9AE85900DD2C30 /* twofish.h */,
+				972023142144038900CB6307 /* base */,
+				972139DA214192310010C00D /* twofish.cpp */,
+				972139DB214192310010C00D /* twofish.h */,
+				972139C4214192260010C00D /* Aes.cpp */,
+				972139CA214192260010C00D /* Aes.h */,
+				972139C0214192260010C00D /* config.h */,
+				972139C5214192260010C00D /* Hash.h */,
+				972139C3214192260010C00D /* Rsa.cpp */,
+				972139C8214192260010C00D /* Rsa.h */,
+				972139C2214192260010C00D /* Serpent.cpp */,
+				972139C7214192260010C00D /* Serpent.h */,
+				972139CB214192260010C00D /* Sha256.h */,
+				972139C1214192260010C00D /* Secp256k1w.h */,
+				972139C9214192260010C00D /* Secp256k1w.cpp */,
+				972139AE21417C480010C00D /* twofish */,
 			);
-			name = nrencryption;
+			path = libnrencryption;
 			sourceTree = "<group>";
 		};
-		97B466C51C9AE85C00DD2C30 /* twofish */ = {
+		972139AE21417C480010C00D /* twofish */ = {
 			isa = PBXGroup;
 			children = (
-				97B466C61C9AE86B00DD2C30 /* platform.h */,
-				97B466C71C9AE86B00DD2C30 /* table.h */,
-				97B466C81C9AE86B00DD2C30 /* twofish2.cpp */,
-				97B466C91C9AE86B00DD2C30 /* twofish2.h */,
+				972139E12141923E0010C00D /* platform.h */,
+				972139E02141923E0010C00D /* table.h */,
+				972139DE2141923E0010C00D /* twofish2.cpp */,
+				972139DF2141923E0010C00D /* twofish2.h */,
 			);
-			name = twofish;
+			path = twofish;
+			sourceTree = "<group>";
+		};
+		972139F021419B0D0010C00D /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				972139F121419B0D0010C00D /* main.cpp */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		97DA12562143FCB500296BEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97DA12572143FCB500296BEB /* libnrcore.a */,
+				97DA12582143FCB500296BEB /* libnrdebug.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		97B466A31C9AE7D900DD2C30 /* Headers */ = {
+		9721398A21417AF80010C00D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B466CB1C9AE86B00DD2C30 /* table.h in Headers */,
-				97B466C11C9AE85900DD2C30 /* serpent.h in Headers */,
-				97B466C41C9AE85900DD2C30 /* twofish.h in Headers */,
-				97B466BD1C9AE85900DD2C30 /* Hash.h in Headers */,
-				97B466CD1C9AE86B00DD2C30 /* twofish2.h in Headers */,
-				97B466BF1C9AE85900DD2C30 /* Rsa.h in Headers */,
-				97B466C21C9AE85900DD2C30 /* Sha256.h in Headers */,
-				97B466CA1C9AE86B00DD2C30 /* platform.h in Headers */,
-				97B466BA1C9AE85900DD2C30 /* Aes.h in Headers */,
-				97B466BC1C9AE85900DD2C30 /* Cipher.h in Headers */,
+				972139D2214192260010C00D /* Hash.h in Headers */,
+				972139D7214192260010C00D /* Aes.h in Headers */,
+				972139D3214192260010C00D /* Cipher.h in Headers */,
+				972139D4214192260010C00D /* Serpent.h in Headers */,
+				972139E32141923E0010C00D /* twofish2.h in Headers */,
+				972139D5214192260010C00D /* Rsa.h in Headers */,
+				972023132144035700CB6307 /* Signer.h in Headers */,
+				972139CD214192260010C00D /* config.h in Headers */,
+				972139E42141923E0010C00D /* table.h in Headers */,
+				972139CE214192260010C00D /* Secp256k1w.h in Headers */,
+				972139E52141923E0010C00D /* platform.h in Headers */,
+				972139D8214192260010C00D /* Sha256.h in Headers */,
+				972139DD214192310010C00D /* twofish.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		97B466A41C9AE7D900DD2C30 /* NrEncryption */ = {
+		9721398D21417AF80010C00D /* libNrEncryption */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97B466A91C9AE7D900DD2C30 /* Build configuration list for PBXNativeTarget "NrEncryption" */;
+			buildConfigurationList = 9721399221417AF80010C00D /* Build configuration list for PBXNativeTarget "libNrEncryption" */;
 			buildPhases = (
-				97B466A11C9AE7D900DD2C30 /* Sources */,
-				97B466A21C9AE7D900DD2C30 /* Frameworks */,
-				97B466A31C9AE7D900DD2C30 /* Headers */,
+				9721398A21417AF80010C00D /* Headers */,
+				9721398B21417AF80010C00D /* Sources */,
+				9721398C21417AF80010C00D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NrEncryption;
-			productName = NrEncryption;
-			productReference = 97B466A51C9AE7D900DD2C30 /* libNrEncryption.a */;
+			name = libNrEncryption;
+			productName = libNrEncryption;
+			productReference = 9721398E21417AF80010C00D /* libNrEncryption.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		972139EE21419B0D0010C00D /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 972139F321419B0D0010C00D /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				972139EB21419B0D0010C00D /* Sources */,
+				972139EC21419B0D0010C00D /* Frameworks */,
+				972139ED21419B0D0010C00D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 972139EF21419B0D0010C00D /* UnitTests */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		97B4669D1C9AE7D900DD2C30 /* Project object */ = {
+		9721398621417AF80010C00D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Liquidsoft Studio";
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Nyhl Rawlings";
 				TargetAttributes = {
-					97B466A41C9AE7D900DD2C30 = {
-						CreatedOnToolsVersion = 7.3;
+					9721398D21417AF80010C00D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					972139EE21419B0D0010C00D = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = 97B466A01C9AE7D900DD2C30 /* Build configuration list for PBXProject "libNrEncryption" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 9721398921417AF80010C00D /* Build configuration list for PBXProject "libNrEncryption" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 97B4669C1C9AE7D900DD2C30;
-			productRefGroup = 97B466A61C9AE7D900DD2C30 /* Products */;
+			mainGroup = 9721398521417AF80010C00D;
+			productRefGroup = 9721398F21417AF80010C00D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97B466A41C9AE7D900DD2C30 /* NrEncryption */,
+				9721398D21417AF80010C00D /* libNrEncryption */,
+				972139EE21419B0D0010C00D /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		97B466A11C9AE7D900DD2C30 /* Sources */ = {
+		9721398B21417AF80010C00D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B466BE1C9AE85900DD2C30 /* Rsa.cpp in Sources */,
-				97B466C01C9AE85900DD2C30 /* Serpent.cpp in Sources */,
-				97B466BB1C9AE85900DD2C30 /* Cipher.cpp in Sources */,
-				97B466CC1C9AE86B00DD2C30 /* twofish2.cpp in Sources */,
-				97B466C31C9AE85900DD2C30 /* twofish.cpp in Sources */,
-				97B466B91C9AE85900DD2C30 /* Aes.cpp in Sources */,
+				972139D1214192260010C00D /* Aes.cpp in Sources */,
+				972139D9214192260010C00D /* Cipher.cpp in Sources */,
+				972139D0214192260010C00D /* Rsa.cpp in Sources */,
+				972023122144035700CB6307 /* Signer.cpp in Sources */,
+				972139D6214192260010C00D /* Secp256k1w.cpp in Sources */,
+				972139DC214192310010C00D /* twofish.cpp in Sources */,
+				972139E22141923E0010C00D /* twofish2.cpp in Sources */,
+				972139CF214192260010C00D /* Serpent.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		972139EB21419B0D0010C00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972139F221419B0D0010C00D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		97B466A71C9AE7D900DD2C30 /* Debug */ = {
+		9721399021417AF80010C00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -228,37 +349,52 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		97B466A81C9AE7D900DD2C30 /* Release */ = {
+		9721399121417AF80010C00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -266,24 +402,67 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		97B466AA1C9AE7D900DD2C30 /* Debug */ = {
+		9721399321417AF80010C00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MASABRRSM;
+				EXECUTABLE_PREFIX = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/openssl/1.0.2p/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9721399421417AF80010C00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MASABRRSM;
+				EXECUTABLE_PREFIX = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/openssl/1.0.2p/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		972139F421419B0D0010C00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MASABRRSM;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					./,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		97B466AB1C9AE7D900DD2C30 /* Release */ = {
+		972139F521419B0D0010C00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MASABRRSM;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					./,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -291,25 +470,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97B466A01C9AE7D900DD2C30 /* Build configuration list for PBXProject "libNrEncryption" */ = {
+		9721398921417AF80010C00D /* Build configuration list for PBXProject "libNrEncryption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97B466A71C9AE7D900DD2C30 /* Debug */,
-				97B466A81C9AE7D900DD2C30 /* Release */,
+				9721399021417AF80010C00D /* Debug */,
+				9721399121417AF80010C00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97B466A91C9AE7D900DD2C30 /* Build configuration list for PBXNativeTarget "NrEncryption" */ = {
+		9721399221417AF80010C00D /* Build configuration list for PBXNativeTarget "libNrEncryption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97B466AA1C9AE7D900DD2C30 /* Debug */,
-				97B466AB1C9AE7D900DD2C30 /* Release */,
+				9721399321417AF80010C00D /* Debug */,
+				9721399421417AF80010C00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		972139F321419B0D0010C00D /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				972139F421419B0D0010C00D /* Debug */,
+				972139F521419B0D0010C00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 97B4669D1C9AE7D900DD2C30 /* Project object */;
+	rootObject = 9721398621417AF80010C00D /* Project object */;
 }
