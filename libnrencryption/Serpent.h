@@ -25,7 +25,7 @@
 #ifndef SERPENT_H_
 #define SERPENT_H_
 
-#include "Cipher.h"
+#include "base/Cipher.h"
 
 #include <stdint.h>
 

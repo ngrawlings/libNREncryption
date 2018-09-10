@@ -11,28 +11,28 @@
 
 #include <libnrcore/memory/Ref.h>
 #include <libnrcore/memory/Memory.h>
-#include "Cipher.h"
+#include "base/Signer.h"
 
 #include <secp256k1.h>
 
 namespace nrcore {
     
-    class Secp256k1 : public Cipher {
+    class Secp256k1 : public Signer {
     public:
+        Secp256k1();
         Secp256k1(const Memory& private_key);
         virtual ~Secp256k1();
         
-        virtual void setKey(const Memory &key, const Memory &iv) {};
+        bool setPublicKey(Memory& public_key);
+        Memory getPublicKey(bool compressed);
         
-        virtual CipherResult encrypt(const char* buf, int len) = 0;
-        virtual CipherResult decrypt(const char* buf, int len) = 0;
+        Memory sign(Memory hash);
+        bool verify(Memory hash, Memory signiture);
         
-        virtual int getBlockSize() = 0;
+        int getBlockSize();
         
-        Memory sign(const Memory& hash);
-
     private:
-        secp256k1_context *cxt;
+        secp256k1_context *ctx;
         Memory private_key;
         secp256k1_pubkey pub_key;
         

@@ -6,4 +6,8 @@
 //  Copyright © 2018 Nyhl Rawlings. All rights reserved.
 //
 
-#include "Signer.hpp"
+#include "Signer.h"
+
+namespace nrcore {
+    
+};

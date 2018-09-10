@@ -40,7 +40,7 @@
 
 #include <libnrcore/memory/Ref.h>
 #include <libnrcore/memory/Memory.h>
-#include "Cipher.h"
+#include "base/Cipher.h"
 
 namespace nrcore {
 

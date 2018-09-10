@@ -9,6 +9,20 @@
 #ifndef Signer_hpp
 #define Signer_hpp
 
-#include <stdio.h>
+#include <libnrcore/memory/Memory.h>
+
+namespace nrcore {
+    
+    class Signer {
+    public:
+        virtual ~Signer() {}
+
+        virtual Memory sign(Memory hash) = 0;
+        virtual bool verify(Memory hash, Memory signiture) = 0;
+        
+        virtual int getBlockSize() = 0;
+    };
+    
+};
 
 #endif /* Signer_hpp */

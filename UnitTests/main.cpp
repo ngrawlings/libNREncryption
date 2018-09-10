@@ -22,8 +22,23 @@ bool testSecp256k1() {
     bytes.release();
     
     Secp256k1 secp(private_key);
+    Memory compressed_key = secp.getPublicKey(true);
+    Memory pub_key = secp.getPublicKey(false);
     
-    return true;
+    printf("Compressed Public Key: %s\r\n", (char*)compressed_key.toHex(false));
+    printf("Uncompressed Public Key: %s\r\n", (char*)pub_key.toHex(false));
+    
+    Memory sig = secp.sign(Memory("12345678901234567890123456789012", 32));
+    printf("%s\n", (char*)sig.toHex(false));
+    
+    if (secp.verify(Memory("12345678901234567890123456789012", 32), sig)) {
+        printf("Signiture passed");
+        return true;
+    } else {
+        printf("Signiture failed");
+    }
+    
+    return false;
 }
 
 int main(int argc, const char * argv[]) {

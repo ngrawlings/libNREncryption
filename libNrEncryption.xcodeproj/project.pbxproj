@@ -32,6 +32,7 @@
 		97DA12552143FC5500296BEB /* libNrEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9721398E21417AF80010C00D /* libNrEncryption.a */; };
 		97DA12592143FCB500296BEB /* libnrcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12572143FCB500296BEB /* libnrcore.a */; };
 		97DA125A2143FCB500296BEB /* libnrdebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12582143FCB500296BEB /* libnrdebug.a */; };
+		97F130BE21466CDB002E9AFD /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F130BD21466CDB002E9AFD /* libsecp256k1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 		972139F121419B0D0010C00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		97DA12572143FCB500296BEB /* libnrcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnrcore.a; path = ../../../../../usr/local/lib/libnrcore.a; sourceTree = "<group>"; };
 		97DA12582143FCB500296BEB /* libnrdebug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnrdebug.a; path = ../../../../../usr/local/lib/libnrdebug.a; sourceTree = "<group>"; };
+		97F130BD21466CDB002E9AFD /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecp256k1.a; path = ../../../../../usr/local/lib/libsecp256k1.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F130BE21466CDB002E9AFD /* libsecp256k1.a in Frameworks */,
 				97DA12592143FCB500296BEB /* libnrcore.a in Frameworks */,
 				97DA125A2143FCB500296BEB /* libnrdebug.a in Frameworks */,
 				97DA12552143FC5500296BEB /* libNrEncryption.a in Frameworks */,
@@ -170,6 +173,7 @@
 		97DA12562143FCB500296BEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97F130BD21466CDB002E9AFD /* libsecp256k1.a */,
 				97DA12572143FCB500296BEB /* libnrcore.a */,
 				97DA12582143FCB500296BEB /* libnrdebug.a */,
 			);
@@ -445,8 +449,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MASABRRSM;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					./,
+					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,8 +463,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MASABRRSM;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					./,
+					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";

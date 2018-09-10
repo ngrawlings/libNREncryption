@@ -1,7 +1,7 @@
 #ifndef TWOFISH_H
 #define TWOFISH_H
 
-#include "Cipher.h"
+#include "base/Cipher.h"
 #include "twofish/twofish2.h"
 
 namespace nrcore {

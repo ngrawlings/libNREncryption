@@ -31,7 +31,7 @@
 #ifndef __PeerConnector__Aes__
 #define __PeerConnector__Aes__
 
-#include "Cipher.h"
+#include "base/Cipher.h"
 #include <libnrcore/memory/Memory.h>
 
 #define AES_BLOCK_SIZE 16
