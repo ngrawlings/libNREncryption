@@ -11,17 +11,17 @@
 
 #include <libnrcore/memory/Ref.h>
 #include <libnrcore/memory/Memory.h>
-#include "base/Signer.h"
+#include <libnrencryption/base/Signer.h>
 
 #include <secp256k1.h>
 
 namespace nrcore {
     
-    class Secp256k1 : public Signer {
+    class Secp256k1Signer : public Signer {
     public:
-        Secp256k1();
-        Secp256k1(const Memory& private_key);
-        virtual ~Secp256k1();
+        Secp256k1Signer();
+        Secp256k1Signer(const Memory& private_key);
+        virtual ~Secp256k1Signer();
         
         bool setPublicKey(Memory& public_key);
         Memory getPublicKey(bool compressed);

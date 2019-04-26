@@ -13,8 +13,10 @@ namespace nrcore {
 
         void setKey(const Memory &key, const Memory &iv);
 
-        virtual CipherResult encrypt(const char* buf, int len);
-        virtual CipherResult decrypt(const char* buf, int len);
+        CipherResult encrypt(const char* buf, int len);
+        CipherResult decrypt(const char* buf, int len);
+        
+        int getBlockSize();
         
     private:
         cipherInstance c_inst;

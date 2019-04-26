@@ -11,7 +11,7 @@
 #include <libnrcore/memory/Memory.h>
 
 #include <libnrdebug/UnitTests.h>
-#include <libnrencryption/Secp256k1w.h>
+#include "../libnrencryption/Secp256k1Signer.h"
 #include <libnrcore/utils/ByteUtils.h>
 
 using namespace nrcore;
@@ -21,7 +21,7 @@ bool testSecp256k1() {
     Memory private_key(bytes.getPtr(), 32);
     bytes.release();
     
-    Secp256k1 secp(private_key);
+    Secp256k1Signer secp(private_key);
     Memory compressed_key = secp.getPublicKey(true);
     Memory pub_key = secp.getPublicKey(false);
     

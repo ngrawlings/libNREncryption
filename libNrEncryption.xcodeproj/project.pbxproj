@@ -10,7 +10,7 @@
 		972023122144035700CB6307 /* Signer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972023102144035700CB6307 /* Signer.cpp */; };
 		972023132144035700CB6307 /* Signer.h in Headers */ = {isa = PBXBuildFile; fileRef = 972023112144035700CB6307 /* Signer.h */; };
 		972139CD214192260010C00D /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C0214192260010C00D /* config.h */; };
-		972139CE214192260010C00D /* Secp256k1w.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C1214192260010C00D /* Secp256k1w.h */; };
+		972139CE214192260010C00D /* Secp256k1Signer.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C1214192260010C00D /* Secp256k1Signer.h */; };
 		972139CF214192260010C00D /* Serpent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C2214192260010C00D /* Serpent.cpp */; };
 		972139D0214192260010C00D /* Rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C3214192260010C00D /* Rsa.cpp */; };
 		972139D1214192260010C00D /* Aes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C4214192260010C00D /* Aes.cpp */; };
@@ -18,7 +18,7 @@
 		972139D3214192260010C00D /* Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C6214192260010C00D /* Cipher.h */; };
 		972139D4214192260010C00D /* Serpent.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C7214192260010C00D /* Serpent.h */; };
 		972139D5214192260010C00D /* Rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139C8214192260010C00D /* Rsa.h */; };
-		972139D6214192260010C00D /* Secp256k1w.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C9214192260010C00D /* Secp256k1w.cpp */; };
+		972139D6214192260010C00D /* Secp256k1Signer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139C9214192260010C00D /* Secp256k1Signer.cpp */; };
 		972139D7214192260010C00D /* Aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139CA214192260010C00D /* Aes.h */; };
 		972139D8214192260010C00D /* Sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139CB214192260010C00D /* Sha256.h */; };
 		972139D9214192260010C00D /* Cipher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139CC214192260010C00D /* Cipher.cpp */; };
@@ -29,7 +29,7 @@
 		972139E42141923E0010C00D /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139E02141923E0010C00D /* table.h */; };
 		972139E52141923E0010C00D /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139E12141923E0010C00D /* platform.h */; };
 		972139F221419B0D0010C00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139F121419B0D0010C00D /* main.cpp */; };
-		97DA12552143FC5500296BEB /* libNrEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9721398E21417AF80010C00D /* libNrEncryption.a */; };
+		97DA12552143FC5500296BEB /* libnrencryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9721398E21417AF80010C00D /* libnrencryption.a */; };
 		97DA12592143FCB500296BEB /* libnrcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12572143FCB500296BEB /* libnrcore.a */; };
 		97DA125A2143FCB500296BEB /* libnrdebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12582143FCB500296BEB /* libnrdebug.a */; };
 		97F130BE21466CDB002E9AFD /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F130BD21466CDB002E9AFD /* libsecp256k1.a */; };
@@ -50,9 +50,9 @@
 /* Begin PBXFileReference section */
 		972023102144035700CB6307 /* Signer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Signer.cpp; sourceTree = "<group>"; };
 		972023112144035700CB6307 /* Signer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Signer.h; sourceTree = "<group>"; };
-		9721398E21417AF80010C00D /* libNrEncryption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNrEncryption.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9721398E21417AF80010C00D /* libnrencryption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnrencryption.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		972139C0214192260010C00D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libnrencryption/config.h; sourceTree = SOURCE_ROOT; };
-		972139C1214192260010C00D /* Secp256k1w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Secp256k1w.h; path = libnrencryption/Secp256k1w.h; sourceTree = SOURCE_ROOT; };
+		972139C1214192260010C00D /* Secp256k1Signer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Secp256k1Signer.h; path = libnrencryption/Secp256k1Signer.h; sourceTree = SOURCE_ROOT; };
 		972139C2214192260010C00D /* Serpent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Serpent.cpp; path = libnrencryption/Serpent.cpp; sourceTree = SOURCE_ROOT; };
 		972139C3214192260010C00D /* Rsa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rsa.cpp; path = libnrencryption/Rsa.cpp; sourceTree = SOURCE_ROOT; };
 		972139C4214192260010C00D /* Aes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Aes.cpp; path = libnrencryption/Aes.cpp; sourceTree = SOURCE_ROOT; };
@@ -60,7 +60,7 @@
 		972139C6214192260010C00D /* Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cipher.h; path = libnrencryption/base/Cipher.h; sourceTree = SOURCE_ROOT; };
 		972139C7214192260010C00D /* Serpent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serpent.h; path = libnrencryption/Serpent.h; sourceTree = SOURCE_ROOT; };
 		972139C8214192260010C00D /* Rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rsa.h; path = libnrencryption/Rsa.h; sourceTree = SOURCE_ROOT; };
-		972139C9214192260010C00D /* Secp256k1w.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Secp256k1w.cpp; path = libnrencryption/Secp256k1w.cpp; sourceTree = SOURCE_ROOT; };
+		972139C9214192260010C00D /* Secp256k1Signer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Secp256k1Signer.cpp; path = libnrencryption/Secp256k1Signer.cpp; sourceTree = SOURCE_ROOT; };
 		972139CA214192260010C00D /* Aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aes.h; path = libnrencryption/Aes.h; sourceTree = SOURCE_ROOT; };
 		972139CB214192260010C00D /* Sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sha256.h; path = libnrencryption/Sha256.h; sourceTree = SOURCE_ROOT; };
 		972139CC214192260010C00D /* Cipher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cipher.cpp; path = libnrencryption/base/Cipher.cpp; sourceTree = SOURCE_ROOT; };
@@ -92,7 +92,7 @@
 				97F130BE21466CDB002E9AFD /* libsecp256k1.a in Frameworks */,
 				97DA12592143FCB500296BEB /* libnrcore.a in Frameworks */,
 				97DA125A2143FCB500296BEB /* libnrdebug.a in Frameworks */,
-				97DA12552143FC5500296BEB /* libNrEncryption.a in Frameworks */,
+				97DA12552143FC5500296BEB /* libnrencryption.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 		9721398F21417AF80010C00D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9721398E21417AF80010C00D /* libNrEncryption.a */,
+				9721398E21417AF80010C00D /* libnrencryption.a */,
 				972139EF21419B0D0010C00D /* UnitTests */,
 			);
 			name = Products;
@@ -144,8 +144,8 @@
 				972139C2214192260010C00D /* Serpent.cpp */,
 				972139C7214192260010C00D /* Serpent.h */,
 				972139CB214192260010C00D /* Sha256.h */,
-				972139C1214192260010C00D /* Secp256k1w.h */,
-				972139C9214192260010C00D /* Secp256k1w.cpp */,
+				972139C1214192260010C00D /* Secp256k1Signer.h */,
+				972139C9214192260010C00D /* Secp256k1Signer.cpp */,
 				972139AE21417C480010C00D /* twofish */,
 			);
 			path = libnrencryption;
@@ -196,7 +196,7 @@
 				972023132144035700CB6307 /* Signer.h in Headers */,
 				972139CD214192260010C00D /* config.h in Headers */,
 				972139E42141923E0010C00D /* table.h in Headers */,
-				972139CE214192260010C00D /* Secp256k1w.h in Headers */,
+				972139CE214192260010C00D /* Secp256k1Signer.h in Headers */,
 				972139E52141923E0010C00D /* platform.h in Headers */,
 				972139D8214192260010C00D /* Sha256.h in Headers */,
 				972139DD214192310010C00D /* twofish.h in Headers */,
@@ -220,7 +220,7 @@
 			);
 			name = libNrEncryption;
 			productName = libNrEncryption;
-			productReference = 9721398E21417AF80010C00D /* libNrEncryption.a */;
+			productReference = 9721398E21417AF80010C00D /* libnrencryption.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		972139EE21419B0D0010C00D /* UnitTests */ = {
@@ -284,7 +284,7 @@
 				972139D9214192260010C00D /* Cipher.cpp in Sources */,
 				972139D0214192260010C00D /* Rsa.cpp in Sources */,
 				972023122144035700CB6307 /* Signer.cpp in Sources */,
-				972139D6214192260010C00D /* Secp256k1w.cpp in Sources */,
+				972139D6214192260010C00D /* Secp256k1Signer.cpp in Sources */,
 				972139DC214192310010C00D /* twofish.cpp in Sources */,
 				972139E22141923E0010C00D /* twofish2.cpp in Sources */,
 				972139CF214192260010C00D /* Serpent.cpp in Sources */,
@@ -418,12 +418,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MASABRRSM;
-				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/openssl/1.0.2p/include,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = nrencryption;
+				PRODUCT_NAME = nrencryption;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -433,12 +434,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MASABRRSM;
-				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/openssl/1.0.2p/include,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = nrencryption;
+				PRODUCT_NAME = nrencryption;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

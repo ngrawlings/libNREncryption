@@ -6,15 +6,15 @@
 //  Copyright © 2018 Nyhl Rawlings. All rights reserved.
 //
 
-#include "Secp256k1w.h"
+#include "Secp256k1Signer.h"
 
 namespace nrcore {
     
-    Secp256k1::Secp256k1() {
+    Secp256k1Signer::Secp256k1Signer() {
         this->ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
     }
     
-    Secp256k1::Secp256k1(const Memory& private_key) {
+    Secp256k1Signer::Secp256k1Signer(const Memory& private_key) {
         this->private_key = private_key;
         this->ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
     
@@ -23,15 +23,15 @@ namespace nrcore {
         }
     }
     
-    Secp256k1::~Secp256k1() {
+    Secp256k1Signer::~Secp256k1Signer() {
         secp256k1_context_destroy(this->ctx);
     }
     
-    bool Secp256k1::setPublicKey(Memory& public_key) {
+    bool Secp256k1Signer::setPublicKey(Memory& public_key) {
         return secp256k1_ec_pubkey_parse(this->ctx, &this->pub_key, (const unsigned char*)public_key.getPtr(), public_key.length()) == 1;
     }
     
-    Memory Secp256k1::getPublicKey(bool compressed) {
+    Memory Secp256k1Signer::getPublicKey(bool compressed) {
         size_t sz = 65;
         
         if (compressed) {
@@ -46,7 +46,7 @@ namespace nrcore {
         return ret;
     }
     
-    Memory Secp256k1::sign(Memory block) {
+    Memory Secp256k1Signer::sign(Memory block) {
         secp256k1_ecdsa_signature sig;
         
         if (secp256k1_ecdsa_sign(this->ctx, &sig, (const unsigned char*)block.getPtr(), (const unsigned char*)this->private_key.operator char *(), 0, 0) == 1) {
@@ -58,7 +58,7 @@ namespace nrcore {
         throw "Faield to sign";
     }
     
-    bool Secp256k1::verify(Memory block, Memory signiture) {
+    bool Secp256k1Signer::verify(Memory block, Memory signiture) {
         secp256k1_ecdsa_signature sig;
         
         if (secp256k1_ecdsa_signature_parse_compact(this->ctx, &sig, (const unsigned char*)signiture.getPtr()) == 1) {
@@ -68,7 +68,7 @@ namespace nrcore {
         return false;
     }
     
-    int Secp256k1::getBlockSize() {
+    int Secp256k1Signer::getBlockSize() {
         return 32;
     }
     

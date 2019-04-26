@@ -43,5 +43,9 @@ namespace nrcore {
         
         return CipherResult(result, len);
     }
+    
+    int TwoFish::getBlockSize() {
+        return 16;
+    }
 
 };
