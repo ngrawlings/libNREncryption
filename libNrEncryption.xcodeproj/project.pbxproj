@@ -263,6 +263,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9721398521417AF80010C00D;
 			productRefGroup = 9721398F21417AF80010C00D /* Products */;
@@ -421,7 +422,7 @@
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					/usr/local/Cellar/openssl/1.0.2p/include,
+					/usr/local/Cellar/openssl/1.0.2r/include,
 				);
 				PRODUCT_MODULE_NAME = nrencryption;
 				PRODUCT_NAME = nrencryption;
@@ -437,7 +438,7 @@
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					/usr/local/Cellar/openssl/1.0.2p/include,
+					/usr/local/Cellar/openssl/1.0.2r/include,
 				);
 				PRODUCT_MODULE_NAME = nrencryption;
 				PRODUCT_NAME = nrencryption;
