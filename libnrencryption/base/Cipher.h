@@ -31,43 +31,14 @@
 
 namespace nrcore {
 
-    class CipherResult {
-    public:
-        CipherResult(char *bytes, int length) {
-            this->_bytes = Ref<char>(bytes, true);
-            this->_length = length;
-        }
-        
-        CipherResult(const CipherResult &cipher) {
-            this->_bytes = cipher._bytes;
-            this->_length = cipher._length;
-        }
-        
-        ~CipherResult() {
-
-        }
-        
-        int length() const {
-            return _length;
-        }
-        
-        Ref<char> bytes() const {
-            return _bytes;
-        }
-        
-    protected:
-        Ref<char> _bytes;
-        int _length;
-    };
-
     class Cipher {
     public:
         virtual ~Cipher() {}
 
         virtual void setKey(const Memory &key, const Memory &iv) {};
         
-        virtual CipherResult encrypt(const char* buf, int len) = 0;
-        virtual CipherResult decrypt(const char* buf, int len) = 0;
+        virtual Memory encrypt(const char* buf, int len) = 0;
+        virtual Memory decrypt(const char* buf, int len) = 0;
         
         virtual int getBlockSize() = 0;
         

@@ -29,6 +29,12 @@
 		972139E42141923E0010C00D /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139E02141923E0010C00D /* table.h */; };
 		972139E52141923E0010C00D /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 972139E12141923E0010C00D /* platform.h */; };
 		972139F221419B0D0010C00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972139F121419B0D0010C00D /* main.cpp */; };
+		97BA56CC235850C900F27FA7 /* Ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BA56CA235850C900F27FA7 /* Ripemd160.h */; };
+		97BA56D0235851DC00F27FA7 /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BA56CE235851DC00F27FA7 /* ripemd160.h */; };
+		97BA56D1235851DC00F27FA7 /* ripemd160.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BA56CF235851DC00F27FA7 /* ripemd160.cpp */; };
+		97BA56EE23588D8A00F27FA7 /* Keccak256.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BA56EC23588D8A00F27FA7 /* Keccak256.h */; };
+		97BA56F223588DC200F27FA7 /* keccak256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BA56F023588DC200F27FA7 /* keccak256.cpp */; };
+		97BA56F323588DC200F27FA7 /* keccak256.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BA56F123588DC200F27FA7 /* keccak256.h */; };
 		97DA12552143FC5500296BEB /* libnrencryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9721398E21417AF80010C00D /* libnrencryption.a */; };
 		97DA12592143FCB500296BEB /* libnrcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12572143FCB500296BEB /* libnrcore.a */; };
 		97DA125A2143FCB500296BEB /* libnrdebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DA12582143FCB500296BEB /* libnrdebug.a */; };
@@ -72,6 +78,12 @@
 		972139E12141923E0010C00D /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = libnrencryption/twofish/platform.h; sourceTree = SOURCE_ROOT; };
 		972139EF21419B0D0010C00D /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		972139F121419B0D0010C00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		97BA56CA235850C900F27FA7 /* Ripemd160.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ripemd160.h; sourceTree = "<group>"; };
+		97BA56CE235851DC00F27FA7 /* ripemd160.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
+		97BA56CF235851DC00F27FA7 /* ripemd160.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ripemd160.cpp; sourceTree = "<group>"; };
+		97BA56EC23588D8A00F27FA7 /* Keccak256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keccak256.h; sourceTree = "<group>"; };
+		97BA56F023588DC200F27FA7 /* keccak256.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = keccak256.cpp; sourceTree = "<group>"; };
+		97BA56F123588DC200F27FA7 /* keccak256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keccak256.h; sourceTree = "<group>"; };
 		97DA12572143FCB500296BEB /* libnrcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnrcore.a; path = ../../../../../usr/local/lib/libnrcore.a; sourceTree = "<group>"; };
 		97DA12582143FCB500296BEB /* libnrdebug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnrdebug.a; path = ../../../../../usr/local/lib/libnrdebug.a; sourceTree = "<group>"; };
 		97F130BD21466CDB002E9AFD /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecp256k1.a; path = ../../../../../usr/local/lib/libsecp256k1.a; sourceTree = "<group>"; };
@@ -144,9 +156,13 @@
 				972139C2214192260010C00D /* Serpent.cpp */,
 				972139C7214192260010C00D /* Serpent.h */,
 				972139CB214192260010C00D /* Sha256.h */,
+				97BA56CA235850C900F27FA7 /* Ripemd160.h */,
+				97BA56EC23588D8A00F27FA7 /* Keccak256.h */,
 				972139C1214192260010C00D /* Secp256k1Signer.h */,
 				972139C9214192260010C00D /* Secp256k1Signer.cpp */,
+				97BA56CD235851A500F27FA7 /* ripemd160 */,
 				972139AE21417C480010C00D /* twofish */,
+				97BA56EF23588D9F00F27FA7 /* keccak256 */,
 			);
 			path = libnrencryption;
 			sourceTree = "<group>";
@@ -170,6 +186,24 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
+		97BA56CD235851A500F27FA7 /* ripemd160 */ = {
+			isa = PBXGroup;
+			children = (
+				97BA56CE235851DC00F27FA7 /* ripemd160.h */,
+				97BA56CF235851DC00F27FA7 /* ripemd160.cpp */,
+			);
+			path = ripemd160;
+			sourceTree = "<group>";
+		};
+		97BA56EF23588D9F00F27FA7 /* keccak256 */ = {
+			isa = PBXGroup;
+			children = (
+				97BA56F123588DC200F27FA7 /* keccak256.h */,
+				97BA56F023588DC200F27FA7 /* keccak256.cpp */,
+			);
+			path = keccak256;
+			sourceTree = "<group>";
+		};
 		97DA12562143FCB500296BEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,17 +223,21 @@
 			files = (
 				972139D2214192260010C00D /* Hash.h in Headers */,
 				972139D7214192260010C00D /* Aes.h in Headers */,
+				97BA56EE23588D8A00F27FA7 /* Keccak256.h in Headers */,
 				972139D3214192260010C00D /* Cipher.h in Headers */,
+				97BA56CC235850C900F27FA7 /* Ripemd160.h in Headers */,
 				972139D4214192260010C00D /* Serpent.h in Headers */,
 				972139E32141923E0010C00D /* twofish2.h in Headers */,
 				972139D5214192260010C00D /* Rsa.h in Headers */,
 				972023132144035700CB6307 /* Signer.h in Headers */,
+				97BA56D0235851DC00F27FA7 /* ripemd160.h in Headers */,
 				972139CD214192260010C00D /* config.h in Headers */,
 				972139E42141923E0010C00D /* table.h in Headers */,
 				972139CE214192260010C00D /* Secp256k1Signer.h in Headers */,
 				972139E52141923E0010C00D /* platform.h in Headers */,
 				972139D8214192260010C00D /* Sha256.h in Headers */,
 				972139DD214192310010C00D /* twofish.h in Headers */,
+				97BA56F323588DC200F27FA7 /* keccak256.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +284,7 @@
 		9721398621417AF80010C00D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Nyhl Rawlings";
 				TargetAttributes = {
 					9721398D21417AF80010C00D = {
@@ -288,6 +326,8 @@
 				972139D6214192260010C00D /* Secp256k1Signer.cpp in Sources */,
 				972139DC214192310010C00D /* twofish.cpp in Sources */,
 				972139E22141923E0010C00D /* twofish2.cpp in Sources */,
+				97BA56F223588DC200F27FA7 /* keccak256.cpp in Sources */,
+				97BA56D1235851DC00F27FA7 /* ripemd160.cpp in Sources */,
 				972139CF214192260010C00D /* Serpent.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +463,7 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/openssl/1.0.2r/include,
+					"\"$(SRCROOT)/../LibNrCore/\"",
 				);
 				PRODUCT_MODULE_NAME = nrencryption;
 				PRODUCT_NAME = nrencryption;
@@ -439,6 +480,7 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/openssl/1.0.2r/include,
+					"\"$(SRCROOT)/../LibNrCore/\"",
 				);
 				PRODUCT_MODULE_NAME = nrencryption;
 				PRODUCT_NAME = nrencryption;
@@ -449,6 +491,7 @@
 		972139F421419B0D0010C00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MASABRRSM;
 				HEADER_SEARCH_PATHS = (
@@ -463,6 +506,7 @@
 		972139F521419B0D0010C00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MASABRRSM;
 				HEADER_SEARCH_PATHS = (

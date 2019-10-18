@@ -41,8 +41,8 @@ namespace nrcore {
         
         void setKey(const Memory &key, const Memory &iv);
         
-        CipherResult encrypt(const char* buf, int len);
-        CipherResult decrypt(const char* buf, int len);
+        Memory encrypt(const char* buf, int len);
+        Memory decrypt(const char* buf, int len);
 
         int getBlockSize() { return 16; }
         

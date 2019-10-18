@@ -15,7 +15,7 @@ namespace nrcore {
         makeKey(&k_decrypt, DIR_DECRYPT, 256, key.getMemory().getPtr());
     }
 
-    CipherResult TwoFish::encrypt(const char* buf, int len) {
+    Memory TwoFish::encrypt(const char* buf, int len) {
         if (len%(BLOCK_SIZE/8))
             throw -1;
 
@@ -27,10 +27,10 @@ namespace nrcore {
         for (unsigned int i=0; i<len; i+=(BLOCK_SIZE/8))
             blockEncrypt(&c_inst, &k_encrypt, (BYTE*)&input.operator char *()[i], BLOCK_SIZE, (BYTE*)&result[i]);
         
-        return CipherResult(result, len);
+        return Memory(result, len);
     }
 
-    CipherResult TwoFish::decrypt(const char* buf, int len) {
+    Memory TwoFish::decrypt(const char* buf, int len) {
         if (len%(BLOCK_SIZE/8))
             throw -1;
 
@@ -41,7 +41,7 @@ namespace nrcore {
         
         len = unpaddedLength(result, len);
         
-        return CipherResult(result, len);
+        return Memory(result, len);
     }
     
     int TwoFish::getBlockSize() {

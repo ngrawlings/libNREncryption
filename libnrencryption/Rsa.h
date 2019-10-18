@@ -55,8 +55,8 @@ namespace nrcore {
         Rsa(const Memory& _cert, const FORMAT cert_format);
         virtual ~Rsa();
         
-        CipherResult encrypt(const char* buf, int len);
-        CipherResult decrypt(const char* buf, int len);
+        Memory encrypt(const char* buf, int len);
+        Memory decrypt(const char* buf, int len);
         
         int getBlockSize();
 

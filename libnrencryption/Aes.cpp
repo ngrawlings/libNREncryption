@@ -956,18 +956,12 @@ namespace nrcore {
         MakeKey(key.getMemory().getPtr(), iv.getMemory().getPtr(), 32, 16);
     }
 
-    CipherResult Aes::encrypt(const char *buf, int len) {
-        Ref<char> enc = Encrypt(buf, &len);
-        CipherResult result(enc.getPtr(), len);
-        enc.release();
-        return result;
+    Memory Aes::encrypt(const char *buf, int len) {
+        return Encrypt(buf, &len);
     }
 
-    CipherResult Aes::decrypt(const char *buf, int len) {
-        Ref<char> dec = Decrypt(buf, &len);
-        CipherResult result(dec.getPtr(), (dec.getPtr() ? len:0));
-        dec.release();
-        return result;
+    Memory Aes::decrypt(const char *buf, int len) {
+        return Decrypt(buf, &len);
     }
 
     void Aes::encryptBlock(const char* dat_in, char *dat_out) {
@@ -1392,13 +1386,13 @@ namespace nrcore {
         return true;
     }
     
-    Ref<char> Aes::Encrypt(const char *data_in, int *len)
+    Memory Aes::Encrypt(const char *data_in, int *len)
     {
         int n = *len;
         char *bout;
         
         if(false==m_bKeyInit || !len)
-            return Ref<char>(0);
+            return Memory(0);
         
         Memory input = pad(data_in, *len, getBlockSize());
     
@@ -1413,18 +1407,18 @@ namespace nrcore {
             memcpy(m_chain, &bout[i*m_blockSize], m_blockSize);
         }
         
-        return Ref<char>(bout, true);
+        return Memory(bout, n);
     }
     
-    Ref<char> Aes::Decrypt(const char *data_in, int *len)
+    Memory Aes::Decrypt(const char *data_in, int *len)
     {
         int n = *len;
         
         if(m_bKeyInit==false || !n || n%m_blockSize!=0)
-            return Ref<char>(0);
+            return Memory(0);
         
-        Ref<char> ret = Ref<char>(new char[n], true);
-        char *bout = &ret.get();
+        Memory ret = Memory(n);
+        char *bout = ret.operator char *();
         
         for(int i=0; i<n/m_blockSize; i++)
         {

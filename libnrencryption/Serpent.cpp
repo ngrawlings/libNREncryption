@@ -250,7 +250,7 @@ namespace nrcore {
         }
     }
 
-    CipherResult Serpent::encrypt(const char* buf, int len)
+    Memory Serpent::encrypt(const char* buf, int len)
     {
         if (len%16)
             throw "Invalid Length";
@@ -262,10 +262,10 @@ namespace nrcore {
         for (int i=0; i<len; i+=16)
             enc(&result[i]);
         
-        return CipherResult(result, len);
+        return Memory(result, len);
     }
 
-    CipherResult Serpent::decrypt(const char* buf, int len)
+    Memory Serpent::decrypt(const char* buf, int len)
     {
         if (len%16)
             throw "Invalid Length";
@@ -277,7 +277,7 @@ namespace nrcore {
         for (int i=0; i<len; i+=16)
             dec(&result[i]);
         
-        return CipherResult(result, len);
+        return Memory(result, len);
     }
 
 };

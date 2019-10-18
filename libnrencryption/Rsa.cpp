@@ -84,23 +84,23 @@ namespace nrcore {
         X509_free(cert);
     }
 
-    CipherResult Rsa::encrypt(const char* buf, int len) {
+    Memory Rsa::encrypt(const char* buf, int len) {
         char* encrypt = new char[RSA_size(enc)];
         int encrypt_len = 0;
 
         if((encrypt_len = RSA_public_encrypt(len, (unsigned char*)buf, (unsigned char*)encrypt, enc, RSA_PKCS1_PADDING)) == -1)
-            return CipherResult(0, -1);
+            return Memory(0, 0);
 
-        return CipherResult(encrypt, encrypt_len);
+        return Memory(encrypt, encrypt_len);
     }
 
-    CipherResult Rsa::decrypt(const char*buf, int len) {
+    Memory Rsa::decrypt(const char*buf, int len) {
         char* decrypt = new char[RSA_size(dec)];
         int decrypt_len;
         if((decrypt_len = RSA_private_decrypt(len, (unsigned char*)buf, (unsigned char*)decrypt, dec, RSA_PKCS1_PADDING)) == -1)
-            return CipherResult(0, -1);
+            return Memory(0, 0);
 
-        return Ref<CipherResult>(new CipherResult(decrypt, decrypt_len));
+        return Memory(decrypt, decrypt_len);
     }
 
     int Rsa::getBlockSize() {
